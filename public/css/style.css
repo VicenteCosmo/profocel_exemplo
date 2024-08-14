@@ -1,0 +1,409 @@
+#logo{
+image-rendering: pixelated;
+border-radius: 50%;
+}
+
+.textLogo{
+    margin-left: 25%;
+}
+.back{
+    margin-top: 10px ; 
+}
+
+/*Animated text*/
+/*spans*/
+
+.animated-text span{
+    content: '';
+    position: relative;
+}
+
+.animated-text .span1::before{
+    content: '';
+    animation: animate1 ease-in-out 40s infinite;
+}
+.animated-text .span2::before{
+    content: '';
+    animation: animate2 ease-in-out 40s infinite;
+}
+.animated-text .span3::before{
+    content: '';
+    animation: animate3 ease-in-out 40s infinite;
+}
+.animated-text .span4::before{
+    content: '';
+    animation: animate4 ease-in-out 40s infinite;
+}
+.animated-text .span5::before{
+    content: '';
+    animation: animate5 ease-in-out 40s infinite;
+}
+.animated-text .span6::before{
+    content: '';
+    animation: animate6 ease-in-out 40s infinite;
+}
+.animated-text .span7::before{
+    content: '';
+    animation: animate7 ease-in-out 40s infinite;
+}
+.animated-text .span8::before{
+    content: '';
+    animation: animate8 ease-in-out 40s infinite;
+}
+.animated-text .span9::before{
+    content: '';
+    animation: animate9 ease-in-out 40s infinite;
+}
+.animated-text .span10::before{
+    content: '';
+    animation: animate10 ease-in-out 40s infinite;
+}
+.animated-text .span11::before{
+    content: '';
+    animation: animate11 ease-in-out 40s infinite;
+}
+.animated-text .span12::before{
+    content: '';
+    animation: animate12 ease-in-out 40s infinite;
+}
+.animated-text .span13::before{
+    content: '';
+    animation: animate13 ease-in-out 40s infinite;
+}
+.animated-text .span14::before{
+    content: '';
+    animation: animate14 ease-in-out 40s infinite;
+}
+
+
+/*End spans*/
+
+/*
+.animated-text span::after{
+    content: '';
+    border-right: 2px solid #28669b;
+    background-color: #024780;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    animation: type1 ease-in-out 40s infinite;
+}*/
+
+@keyframes animate1 {
+    1%{
+        content: 'S';
+    }
+    10%, 24%{
+        content: '';
+    }
+    11%{
+        content: 'T';
+    }
+    25%{
+        content: 'B';
+    }
+    
+}
+@keyframes animate2 {
+    2%{
+        content: 'o';
+    }
+    10%, 11%, 24%, 25%{
+        content: '';
+    }
+    12%{
+        content: 'r';
+    }
+    26%{
+        content: 'e';
+    }
+    
+    
+}
+@keyframes animate3 {
+    3%{
+        content: 'm';
+    }
+    10%, 11%, 12%, 24%, 25%, 26%{
+        content: '';
+    }
+    13%{
+        content: 'a';
+        color: #fff;
+    }
+    27%{
+        content: 'Humble';
+        color: #28669b;
+    }
+}
+@keyframes animate4 {
+    4%{
+        content: 'o';
+    }  
+    10%, 11%,12%, 13%, 24%, 25%, 26%, 27%{
+        content: '';
+    }
+    14%{
+        content: 'n';
+    } 
+    28%{
+        content: ',';
+    }
+}
+@keyframes animate5 {
+    5%{
+        content: 's';
+    }  
+    10%, 11%, 12%, 13%, 14%, 24%, 25%, 26%, 27%, 28%{
+        content: '';
+    } 
+    15%{
+        content: 'f';
+    }
+    29%{
+        content: 'D';
+    }
+}
+@keyframes animate6 {
+    6%{
+        content: '';
+    } 
+    10%, 11%, 12%, 13%, 14%, 15%, 24%, 25%, 26%, 27%, 28%, 29%{
+        content: '';
+    }
+    16%{
+        content: 'o';
+    }  
+    30%{
+        content: 'o';
+    }
+}
+@keyframes animate7 {
+    7%{
+        content: 'a';
+    }  
+    10%, 11%, 12%, 13%, 14%, 15%, 16%, 24%, 25%, 26%, 27%, 28%, 29%, 30%{
+        content: '';
+    } 
+    17%{
+        content: 'r';
+    }
+    31%{
+        content: 'Y';
+    }
+}
+@keyframes animate8 {
+    8%{
+        content: '';
+    } 
+    10%, 11%, 12%, 13%, 14%, 15%, 16%, 17%, 24%, 25%, 26%, 27%, 28%, 29%, 30%, 31%{
+        content: '';
+    }  
+    18%{
+        content: 'm';
+    }
+    32%{
+        content: 'o';
+    }
+}
+@keyframes animate9 {
+    9%{
+        content: 'PROFOCEL';
+        color: #28669b;
+    }   
+    10%, 11%, 12%, 13%, 14%, 15%, 16%, 17%, 18%, 24%, 25%, 26%, 27%, 28%, 29%, 30%, 31%, 32%{
+        content: '';
+    }
+    19%{
+        content: 'a';
+    }
+    33%{
+        content: 'u';
+        color: #fff;
+    }
+}
+@keyframes animate10 {
+    20%{
+        content: 'm';
+    }   
+    24%, 25%, 26%, 27%, 28%, 29%, 30%, 32%, 33%{
+        content: '';
+    }
+    34%{
+        content: 'r';
+    }
+}
+@keyframes animate11 {
+    21%{
+        content: 'o';
+    }   
+    24%, 25%, 26%, 27%, 28%, 29%, 30%, 31%, 32%, 33%, 34%{
+        content: '';
+    }
+    35%{
+       content: 'Job';
+       color: #28669b;
+    }
+}
+@keyframes animate12 {
+    22%{
+        content: 's';
+    }  
+    24%, 25%, 26%, 27%, 28%, 29%, 30%,31%, 32%, 33%, 34%, 35%{
+        content: '';
+    }
+    
+    36%{
+        content: 'and' ;
+    }
+}
+@keyframes animate13 {
+    23%{
+        content: 'VIDAS';
+        color: #28669b;
+    }   
+    24%, 25%, 26%, 27%, 28%, 29%, 30%,31%, 32%, 33%, 34%, 35%, 36%{
+        content: '';
+    }
+    37%{
+        content: 'do it';
+        color: #fff;
+    }
+
+}
+@keyframes animate14 {
+38%{
+    content: 'Well!';
+    color: #28669b;
+}
+    
+}
+
+
+
+@keyframes type {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0%;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%, 0%{
+        width: 200px;
+    }
+
+}
+
+@keyframes animate {
+ 0%, 20%{
+    content: 'Somos a PROFOCEL';
+ }
+ 21%, 40%{
+    content: 'Transformamos vidas';
+ }
+ 41%, 60%{
+    content: 'Be humble';
+ } 
+ 61%, 80%{
+    content: 'Do your job';
+ }
+ 81%, 99%{
+    content: 'And do it well!';
+ }
+    
+}
+
+/**/
+.navbar ul li a{
+    color: #28669b;
+}
+
+/*menu*/
+
+#btn{
+    margin-top: 5%;
+}
+
+.bar1{
+    border-radius: 24px;
+    width: 35px;
+    height: 4px;
+    background-color: #f9d979;
+    margin-bottom: 4%;
+    background-color: #13578f;
+    transition: 1s;
+}
+.bar2{
+    width: 30px;
+    height: 4px;
+    background-color: #f9d979;
+    background-color: #a7a3a3;
+    margin-top: 2%;
+    border-radius: 24px;
+
+}
+.bar3{
+    width: 35px;
+    height: 4px;
+    background-color: #f9d979;
+   background-color: #13578f;
+   margin-top: 4%;
+   border-radius: 24px;
+
+   transition: 1s;
+
+}
+
+.head-menu{
+    width:60%;
+    height: 60%;
+    color: #f9d979;
+    background-color: #080f3b;
+    position: fixed;
+    z-index: 1;
+    margin-top:105px;
+    border-bottom-right-radius: 50%;
+    transition: 5s;
+    display: none;
+    background-color: #f9d979;
+    background-color: #13578f;
+}
+.head-menu a{
+    color: #f9d979;
+    margin-top: 10%;
+    color: #080f3b;
+    transition: 5s;
+
+}
+.menu{
+    margin-top: 15%;
+    margin-left: 5%;
+    font-size: 20px;
+    transition: 5s;
+
+}
+/**/
+
+/*Sobre Nós*/
+.sobreNosCard{
+    width: 100%;
+    text-align: center;
+    color: #28669b;
+}
+.sobreNosCard .h4::before{
+    content: '';
+    background-color: #28669b;
+    width: 30%;
+    height: .5px;
+    position: absolute;
+    margin-left: -31%;
+    margin-top: 15px;
+}
+.sobreNosCard .h4::after{
+    content: '';
+    background-color: #28669b;
+    width: 30%;
+    height: .5px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 1%;
+}
+.sobreNosCard1{
+}
