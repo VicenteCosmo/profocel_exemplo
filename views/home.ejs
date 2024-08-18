@@ -45,10 +45,111 @@
          ducimus possimus, necessitatibus ex atque neque blanditiis molestiae perspiciatis natus enim 
          maxime debitis? 
           odit sapiente sequi distinctio possimus..</p>
-      <p class="card-text" style="color: blue;"><small class="">Ler mais</small></p>
+
+
+      <p class="card-text" id="mais" >A PROFOCEL é uma entidade empresaroal... Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. Hic, ad sed! Ipsum deserunt consectetur, excepturi fugit reiciendis
+         consequuntur
+         molestiae in, hic accusantium rem distinctio. Quas quam a facere qui alias
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsam dolore 
+         ducimus possimus, necessitatibus ex atque neque blanditiis molestiae perspiciatis natus enim 
+         maxime debitis? 
+          odit sapiente sequi distinctio possimus..</p>
+
+          <p class="card-text" id="menos" ><small class="" style="color: #28669b;"> Ler mais</small></p>
+
     </div>
   </div>
 
+  <!--Trabalhos Realizados-->
+  <div class="card">
+    <div class="card-body sobreNosCard ">
+      <h4 class="card-title"> <div class="h4">Trabalhos</div></h4>
+    </div>
+  </div>
+
+  <!--Slide-->
+  <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <div class="card" >
+          <div class="img-wrapper">
+            <img src="/logo.jpg" alt="...">
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="carousel-item">
+
+        <div class="card" >
+          <div class="img-wrapper">
+            <img src="/logo1.jpg" alt="...">
+          </div>
+         
+        </div>
+        
+      </div>
+
+      <div class="carousel-item">
+        
+        <div class="card" >
+          <div class="img-wrapper">
+            <img src="/LOGO.jpg" alt="...">
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="carousel-item">
+
+        <div class="card" >
+         <div class="img-wrapper">
+          <img src="/logo1.jpg" alt="...">
+         </div>
+          
+        </div>
+        
+      </div>
+
+      <div class="carousel-item">
+
+        <div class="card" >
+
+          <div class="img-wrapper">
+          <img src="/logo1.jpg" alt="...">
+          </div>
+          
+        </div>
+        
+      </div>
+
+      <div class="carousel-item">
+        
+        <div class="card" >
+
+          <div class="img-wrapper">
+          <img src="logo.jpg" alt="...">
+
+          </div>
+
+          
+        </div>
+
+      </div>
+
+    </div>
+    <div class="carousel-control-prev bg-light" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #28669b; width:25px; height: 25px;" ></span>
+    </div>
+    <div class="carousel-control-next bg-light" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #28669b; width: 25px; height: 25px;"></span>
+    </div>
+  </div>
+   
   <!--Serviços-->
 
   <div class="card">
@@ -72,7 +173,7 @@
             voluptatibus. Consectetur quas consequuntur 
             accusantium inventore ea?</p>
 
-            <p class="card-text" style="color: blue;"><small class="">Ler mais</small></p>
+            <p class="card-text"><small class="" style="color: #28669b; cursor: pointer;">Ler mais</small></p>
         </div>
       </div>
     </div>
@@ -80,7 +181,7 @@
       <div class="card h-100">
         <img src="/training.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title" style="color: #28669b;">Formação</h5>
+          <h5 class="card-title" style="color: #28669b; cursor: pointer;">Formação</h5>
           <p class="card-text">Lorem, ipsum dolor sit amet consectetur
             adipisicing elit. Tempore perspiciatis libero beatae, quaerat accusamus
              laudantium praesentium voluptas maiores fugiat, omnis veniam nam enim 
@@ -91,12 +192,88 @@
           voluptatibus. Consectetur quas consequuntur 
           accusantium inventore ea?</p>
 
-          <p class="card-text" style="color: blue;"><small class="">Ler mais</small></p>
+          <p class="card-text" ><small class="" style="color: #28669b; cursor: pointer;">Ler mais</small></p>
         </div>
       </div>
     </div>
     
   </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  <script>
+    const mais= document.getElementById('mais')
+    const menos= document.getElementById('menos')
+    const span=document.getElementById('span')
+
+    menos.addEventListener('click', ()=>{
+      if(mais.style.display=='none'){
+        mais.style.display='block'
+        menos.innerText='Ler menos'
+      }
+      else{
+        mais.style.display='none'
+        menos.innerText='Ler mais'
+      }
+    })
+
+    //slides
+
+    const multipleItemCarousel = document.querySelector('#carouselExampleControls')
+
+
+    if(window.matchMedia("(min-width: 576px)").matches){
+      const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+  interval: 1,
+})
+
+      var carouselWith=$('.carousel-inner')[0].scrollWidth
+   var cardWidth=$('.carousel-item').width()
+   
+   var scrollPosition=0
+   $('.carousel-control-next').on('click', ()=>{
+
+    if(scrollPosition<(cardWidth-(cardWidth*3))){
+            scrollPosition+=cardWidth
+
+            $('.carousel-inner').animate({
+            scrollLeft:scrollPosition}, 600)
+      
+    }
+
+    scrollPosition+=cardWidth
+
+$('.carousel-inner').animate({
+ scrollLeft:scrollPosition
+}, 600)
+   })
+
+   /**/
+   $('.carousel-control-prev').on('click', ()=>{
+
+if(scrollPosition<(cardWidth-(cardWidth*3))){
+        scrollPosition-=cardWidth
+
+        $('.carousel-inner').animate({
+        scrollLeft:scrollPosition}, 600)
+  
+}
+
+scrollPosition-=cardWidth
+
+$('.carousel-inner').animate({
+scrollLeft:scrollPosition
+}, 600)
+})
+
+    }
+    else{
+      $(multipleItemCarousel).addClass('slide')
+
+    }
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
   <%- include('./partials/footer') %>
   

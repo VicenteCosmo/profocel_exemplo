@@ -352,19 +352,27 @@ border-radius: 50%;
 }
 
 .head-menu{
-    width:60%;
-    height: 60%;
-    color: #f9d979;
-    background-color: #080f3b;
+    width:100%;
+    height: 100%;
     position: fixed;
     z-index: 1;
     margin-top:105px;
-    border-bottom-right-radius: 50%;
     transition: 5s;
     display: none;
-    background-color: #f9d979;
     background-color: #13578f;
+    animation: appear 1s ease-in-out ;    
 }
+
+@keyframes appear {
+    from{
+        width: 5%;
+    }
+    to{
+        width: 100%;
+    }
+    
+}
+
 .head-menu a{
     color: #f9d979;
     margin-top: 10%;
@@ -405,5 +413,65 @@ border-radius: 50%;
     margin-top: 15px;
     margin-left: 1%;
 }
-.sobreNosCard1{
+#mais{
+    display: none;
 }
+#menos{
+    cursor: pointer;
+    color: #13578f;
+}
+
+/*Trabalhos Realizados*/
+body{
+@media screen and (min-width: 576px) {
+    .carousel-inner{
+        display: flex;
+    }
+    .carousel-item{
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+        display: block;
+    }
+    .carousel-inner .card{
+        margin: 0 .5em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, .18);
+        height: 25vw;
+    }
+    .img-wrapper{
+         max-width: 100%;
+         height: 23vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 10px 0 0 0 ;
+         
+    }
+}
+}
+.carousel-inner{
+    padding: 1em;
+}
+.carousel-inner .card{
+    margin: 0 .5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, .18);
+    height: 50vw;
+}
+.img-wrapper{
+     max-width: 100%;
+     height: 50vw;
+     display: flex;
+     justify-content: center;
+     
+}
+.img-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.carousel-control-prev, .carousel-control-next{
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    color: #080f3b;
+}
+
+/*Serviços*/
+
