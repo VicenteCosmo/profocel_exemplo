@@ -473,8 +473,10 @@ body{
 #social {
     width: 20px;
     margin-left: 10%;
+    justify-content: center;
 }
 #social img{
     border-radius: 50%;
+    align-items: center;
     width: 30px;
 }
